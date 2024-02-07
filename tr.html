@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Information</title>
+    <style>
+        /* Add your CSS styles here */
+
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #e4d3ba;
+            color: #372c2c;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        textarea {
+            width: 200px;
+            min-height: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 5px;
+            resize: both;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #7a3e3d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #dda544;
+        }
+        #copyButton {
+            background-color: #5f8db5;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #copyButton:hover {
+            background-color: #3f3e8c;
+        }
+
+        #resetButton {
+            background-color: #87b789;
+            color: #2c1919;
+            border: none;
+            padding: 10px 20px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #resetButton:hover {
+            background-color: #555;
+        }
+        textarea {
+            width: 200px; /* Set initial width */
+            min-height: 30px; /* Set minimum height */
+            resize: both; /* Allow both vertical and horizontal resizing */
+        }
+    </style>
+</head>
+<body>
+    <h1>Character Information</h1>
+    <form id="characterForm" style="margin: 0 auto; width: 300px;">
+        <label for="charName">Character Name:</label><br>
+        <textarea id="Name" name="Name" rows="1"></textarea><br>
+
+        <label for="alias">Alias:</label><br>
+        <textarea id="alias" name="alias" rows="1"></textarea><br>
+
+        <label for="age">Age:</label><br>
+        <textarea id="age" name="age" rows="1"></textarea><br>
+
+        <label for="Birthday">Birthday:</label><br>
+        <textarea id="Birthday" name="Birthday" rows="1"></textarea><br>
+
+        <label for="Gender">Gender:</label><br>
+        <textarea id="Gender" name="Gender" rows="1"></textarea><br>
+
+        <label for="Pronouns">Pronouns:</label><br>
+        <textarea id="Pronouns" name="Pronouns" rows="1"></textarea><br>
+
+        <label for="Sexuality">Sexuality:</label><br>
+        <textarea id="Sexuality" name="Sexuality" rows="1"></textarea><br>
+
+        <label for="Species">Species:</label><br>
+        <textarea id="Species" name="Species" rows="1"></textarea><br>
+
+        <label for="Nationality">Nationality:</label><br>
+        <textarea id="Nationality" name="Nationality" rows="1"></textarea><br>
+
+        <label for="Ethnicity">Ethnicity:</label><br>
+        <textarea id="Ethnicity" name="Ethnicity" rows="1"></textarea><br>
+
+        <label for="Appearance">Appearance:</label><br>
+        <textarea id="Appearance" name="Appearance" rows="1"></textarea><br>
+
+        <label for="Height">Height:</label><br>
+        <textarea id="Height" name="Height" rows="1"></textarea><br>
+
+        <label for="Weight">Weight:</label><br>
+        <textarea id="Weight" name="Weight" rows="1"></textarea><br>
+
+        <label for="Eyes">Eyes:</label><br>
+        <textarea id="Eyes" name="Eyes" rows="1"></textarea><br>
+
+        <label for="Hair">Hair:</label><br>
+        <textarea id="Hair" name="Hair" rows="1"></textarea><br>
+
+        <label for="Body">Body:</label><br>
+        <textarea id="Body" name="Body" rows="1"></textarea><br>
+
+        <label for="Face">Face:</label><br>
+        <textarea id="Face" name="Face" rows="1"></textarea><br>
+
+        <label for="Skin">Skin:</label><br>
+        <textarea id="Skin" name="Skin" rows="1"></textarea><br>
+
+        <label for="Personality">Personality:</label><br>
+        <textarea id="Personality" name="Personality" rows="1"></textarea><br>
+
+        <label for="Traits">Traits:</label><br>
+        <textarea id="Traits" name="Traits" rows="1"></textarea><br>
+
+        <label for="MBTI">MBTI:</label><br>
+        <textarea id="MBTI" name="MBTI" rows="1"></textarea><br>
+
+        <label for="Enneagram">Enneagram:</label><br>
+        <textarea id="Enneagram" name="Enneagram" rows="1"></textarea><br>
+
+        <label for="Moral Alignment">Moral Alignment:</label><br>
+        <textarea id="Moral Alignment" name="Moral Alignment" rows="1"></textarea><br>
+
+        <label for="Temperament">Temperament:</label><br>
+        <textarea id="Temperament" name="Temperament" rows="1"></textarea><br>
+
+        <label for="Likes">Likes:</label><br>
+        <textarea id="Likes" name="Likes" rows="1"></textarea><br>
+
+        <label for="Dislikes">Dislikes:</label><br>
+        <textarea id="Dislikes" name="Dislikes" rows="1"></textarea><br>
+
+        <label for="Ability">Ability:</label><br>
+        <textarea id="Ability" name="Ability" rows="1"></textarea><br>
+
+        <label for="Hobbies">Hobbies:</label><br>
+        <textarea id="Hobbies" name="Hobbies" rows="1"></textarea><br>
+
+        <label for="Fears">Fears:</label><br>
+        <textarea id="Fears" name="Fears" rows="1"></textarea><br>
+
+        <label for="Manias">Manias:</label><br>
+        <textarea id="Manias" name="Manias" rows="1"></textarea><br>
+
+        <label for="Strengths">Strengths:</label><br>
+        <textarea id="Strengths" name="Strengths" rows="1"></textarea><br>
+
+        <label for="Weaknesses">Weaknesses:</label><br>
+        <textarea id="Weaknesses" name="Weaknesses" rows="1"></textarea><br>
+
+        <label for="Values">Values:</label><br>
+        <textarea id="Values" name="Values" rows="1"></textarea><br>
+
+        <label for="Blood Type">Blood Type:</label><br>
+        <textarea id="Blood Type" name="Blood Type" rows="1"></textarea><br>
+
+        <label for="Friends">Friends:</label><br>
+        <textarea id="Friends" name="Friends" rows="1"></textarea><br>
+
+        <label for="Enemies">Enemies:</label><br>
+        <textarea id="Enemies" name="Enemies" rows="1"></textarea><br>
+
+        <label for="Career">Career:</label><br>
+        <textarea id="Career" name="Career" rows="1"></textarea><br>
+
+        <label for="House">House:</label><br>
+        <textarea id="House" name="House" rows="1"></textarea><br>
+
+        <label for="Education">Education:</label><br>
+        <textarea id="Education" name="Education" rows="1"></textarea><br>
+
+        <label for="Status">Status:</label><br>
+        <textarea id="Status" name="Status" rows="1"></textarea><br>
+
+        <label for="Languages">Languages:</label><br>
+        <textarea id="Languages" name="Languages" rows="1"></textarea><br>
+
+        <label for="Place of living">Place of living:</label><br>
+        <textarea id="Place of living" name="Place of living" rows="1"></textarea><br>
+
+        <label for="Coworkers">Coworkers:</label><br>
+        <textarea id="Coworkers" name="Coworkers" rows="1"></textarea><br>
+
+        <label for="Backstory">Backstory:</label><br>
+        <textarea id="Backstory" name="Backstory" rows="1"></textarea><br>
+
+        <!-- Add textarea elements for other character details -->
+
+        <button type="submit">Generate Programming Text</button>
+    </form>
+
+    <hr>
+
+    <div id="result">
+        <!-- Generated programming text will appear here -->
+    </div>
+
+    <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+    <button id="resetButton" onclick="resetForm()">Reset Form</button>
+
+
+    <script>
+        // Function to copy text to clipboard
+        function copyToClipboard() {
+            const resultText = document.getElementById('result').innerText;
+            navigator.clipboard.writeText(resultText)
+                .then(() => {
+                    alert('Text copied to clipboard');
+                })
+                .catch(err => {
+                    console.error('Error copying text: ', err);
+                });
+        }
+        // Function to reset the form
+        function resetForm() {
+            document.getElementById('characterForm').reset();
+            document.getElementById('result').innerText = ''; // Clear generated text
+        }
+        // Function to adjust height of textarea
+        function adjustTextareaHeight(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = (textarea.scrollHeight) + 'px';
+        }
+
+        // Add event listeners to all textareas
+        document.querySelectorAll('textarea').forEach(textarea => {
+            adjustTextareaHeight(textarea); // Adjust height initially
+            textarea.addEventListener('input', function() {
+                adjustTextareaHeight(this); // Adjust height when text is inputted
+            });
+        });
+
+        // Event listener for form submission
+        document.getElementById('characterForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            let programmingText = '{{char}}= description= { ';
+            
+            for (const [key, value] of formData.entries()) {
+                if (value.trim() !== '') { // Ignore empty fields
+                    programmingText += `${key}: ["${value.replace(/\n/g, '\\n')}"], `;
+                }
+            }
+
+            if (programmingText.endsWith(', ')) { // Remove trailing comma and space if exists
+                programmingText = programmingText.slice(0, -2);
+            }
+
+            programmingText += ' }';
+            
+            document.getElementById('result').innerText = programmingText;
+        });
+    </script>
+</body>
+</html>
